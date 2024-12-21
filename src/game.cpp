@@ -1,7 +1,10 @@
 #include "src/game.h"
+#include <chrono>
+#include <cstdlib>
 #include <iostream>
 #include <optional>
 #include <random>
+#include <thread>
 #include <vector>
 
 Game::Game() {
@@ -33,7 +36,12 @@ void Game::loop() {
     }
 
     m_guesses[attempt] = guess;
+
+    validating_wait();
+
     decide(guess);
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(650));
   }
 
   // after max attempts
@@ -92,4 +100,11 @@ int Game::get_random_num() {
 
   // get random num
   return distrib(gen);
+}
+
+void Game::validating_wait() {
+  std::cout << "Validating your response.." << std::endl;
+  srand(time(0));
+  std::this_thread::sleep_for(
+      std::chrono::milliseconds(((rand() % 2500) - 1000) + 1000));
 }

@@ -20,6 +20,7 @@ private:
   std::vector<std::optional<int>> m_guesses;
 
   int get_random_num();
+  void validating_wait();
   void show_guesses();
   void decide(int guess);
   void fail();
