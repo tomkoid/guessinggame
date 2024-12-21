@@ -1,9 +1,6 @@
 #include "src/game/game.h"
-#include <cstdlib>
 #include <iostream>
-#include <optional>
 #include <random>
-#include <vector>
 
 Game::Game() {
   // prefill guesses
