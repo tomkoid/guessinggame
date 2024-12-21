@@ -8,16 +8,15 @@ Game::Game() {
   // prefill guesses
   m_guesses.resize(max_attempts);
   std::fill(m_guesses.begin(), m_guesses.end(), std::nullopt);
+
   m_correct = get_random_num();
 }
 
-void Game::start() {
+void Game::init() {
   std::cout << "I'm thinking of a number between " << min << " and " << max
             << std::endl;
   std::cout << "Your goal is to guess what is the number in " << max_attempts
             << " attempts" << std::endl;
-
-  loop();
 }
 
 void Game::loop() {

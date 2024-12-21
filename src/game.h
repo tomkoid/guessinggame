@@ -12,7 +12,7 @@ class Game {
 public:
   Game();
   void loop();
-  void start();
+  void init();
 
 private:
   int m_correct;
