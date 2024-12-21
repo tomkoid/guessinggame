@@ -1,0 +1,13 @@
+[binaries]
+c = 'x86_64-w64-mingw32-gcc'         # C compiler
+cpp = 'x86_64-w64-mingw32-g++'       # C++ compiler
+ar = 'x86_64-w64-mingw32-ar'         # Archiver
+strip = 'x86_64-w64-mingw32-strip'   # Stripping tool
+windres = 'x86_64-w64-mingw32-windres' # Windows resource compiler
+pkgconfig = 'x86_64-w64-mingw32-pkg-config' # Optional, if needed
+
+[host_machine]
+system = 'windows'
+cpu_family = 'x86_64'
+cpu = 'x86_64'
+endian = 'little'

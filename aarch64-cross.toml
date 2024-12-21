@@ -1,0 +1,13 @@
+[binaries]
+c = 'aarch64-linux-gnu-gcc'         # C compiler
+cpp = 'aarch64-linux-gnu-g++'         # C compiler
+ar = 'aarch64-linux-gnu-ar'         # C compiler
+strip = 'aarch64-linux-gnu-strip'         # C compiler
+windres = 'aarch64-linux-gnu-windres'         # C compiler
+pkgconfig = 'aarch64-linux-gnu-pkg-config'         # C compiler
+
+[host_machine]
+system = 'linux'
+cpu_family = 'aarch64'
+cpu = 'aarch64'
+endian = 'little'
