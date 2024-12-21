@@ -102,7 +102,6 @@ int Game::get_random_num(int min, int max) {
 
 void Game::validating_wait() {
   std::cout << "Validating your response.." << std::endl;
-  srand(time(0));
   std::this_thread::sleep_for(
-      std::chrono::milliseconds(((rand() % 2500) - 1000) + 1000));
+      std::chrono::milliseconds(get_random_num(1000, 2500)));
 }
