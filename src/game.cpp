@@ -79,8 +79,6 @@ void Game::fail() {
   std::cout << "=== MISSION FAILED ===" << std::endl;
   std::cout << "The correct number was " << this->m_correct
             << ". Better luck next time!" << std::endl;
-
-  std::cout << this->m_correct << std::endl;
 }
 
 int Game::ask_user_guess() {
