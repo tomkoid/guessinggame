@@ -3,6 +3,11 @@
 #include <optional>
 #include <vector>
 
+const static int min = 0;
+const static int max = 10;
+
+const static int max_attempts = 3;
+
 class Game {
 public:
   Game();
