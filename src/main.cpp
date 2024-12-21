@@ -1,5 +1,5 @@
 #include "src/debug.cpp"
-#include "src/game.h"
+#include "src/game/game.h"
 #include <cstdlib>
 #include <ctime>
 
